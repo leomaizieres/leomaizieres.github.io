@@ -1,0 +1,172 @@
+@font-face
+{
+    font-family: "Viking";
+    src: url("../police/vikingn.ttf");
+}
+.lien
+{
+    background-color: #191e26;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    width: 150px;
+    height: 70px;
+    top: 8%;
+    left: 20%;
+}
+.lien2
+{
+    background-color: #191e26;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    width: 150px;
+    height: 70px;
+    top: 8%;
+    left: 80%;
+}
+.lien3
+{
+    background-color: #191e26;
+    color: white;
+    display: inline-block;
+    width: 150px;
+    height: 70px;
+    z-index: 3;
+    position: absolute;
+    margin-left: 0%;
+    top: 8%;
+    left: 2%;
+}
+body
+{
+    background-color:#191e26 ;
+    background-position: relative;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    font-family: "Viking";
+    text-align: center;
+}
+h1
+{
+    font-size: 6rem;
+}
+.persos
+{
+    display: flex;
+	justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 4rem;
+}
+.portraits
+{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+.portraits img
+{
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#H-G{box-shadow: -15px -15px 3px 0px rgba(0,0,0,0.64);}
+#H-M{box-shadow: 0px -15px 3px 0px rgba(0,0,0,0.64);}
+#H-D{box-shadow: 15px -15px 3px 0px rgba(0,0,0,0.64);}
+
+#M-G{box-shadow: -15px 0px 3px 0px rgba(0,0,0,0.64);}
+#M-M{box-shadow: 0px 0px 3px 15px rgba(73,95,140,1);}
+#M-D{box-shadow: 15px 0px 3px 0px rgba(0,0,0,0.64);}
+
+#B-G{box-shadow: -15px 15px 3px 0px rgba(0,0,0,0.64);}
+#B-M{box-shadow: -0px 15px 3px 0px rgba(0,0,0,0.64);}
+#B-D{box-shadow: 15px 15px 3px 0px rgba(0,0,0,0.64);}
+
+@keyframes monte 
+{
+    0%{transform: translateY(+100%);opacity: 0%;}
+    100%{transform: translateY(0%);opacity: 100%;}
+}
+div img:nth-child(2)
+{
+    width: 300px;
+    height: 300px;
+    
+    position: absolute;
+    animation-delay: 10s;
+    animation: monte 5s linear 8s backwards;
+}
+
+@keyframes apparition
+{
+    0%{opacity: 0%;}
+    100%{opacity: 100%; top: 70%;}
+}
+
+.titre
+{
+    background-color: #191e26;
+    color: steelblue;
+    text-align: center;
+    width: 300px;
+    height: 30px;
+    padding-top: 10px;
+    position: absolute;
+    opacity: 0%;
+    top: 110%;
+    transition: all 1s;
+}
+#H-G:hover #lagertha
+{
+   opacity: 100%;
+   top: 70%;
+}
+#H-M:hover #bjorn
+{
+   opacity: 100%;
+   top: 70%;
+}
+#H-D:hover #ubbe
+{
+   opacity: 100%;
+   top: 70%;
+}
+#M-G:hover #rollo
+{
+   opacity: 100%;
+   top: 70%;
+}
+#M-M:hover #ragnar
+{
+   opacity: 100%;
+   top: 70%;
+}
+#M-D:hover #floki
+{
+   opacity: 100%;
+   top: 70%;
+}
+#B-G:hover #bjornking
+{
+   opacity: 100%;
+   top: 70%;
+}
+#B-M:hover #ivar
+{
+   opacity: 100%;
+   top: 70%;
+}
+#B-D:hover #ragnarking
+{
+   opacity: 100%;
+   top: 70%;
+}

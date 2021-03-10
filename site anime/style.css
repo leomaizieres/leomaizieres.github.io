@@ -1,0 +1,67 @@
+@font-face
+{
+    font-family: "Viking";
+    src: url("./police/vikingn.ttf");
+}
+#box
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20rem;
+    width: 100%;
+}
+.lien
+{
+    text-align: center;
+    background-color: #191e26;
+    color: white;
+    font-size: 2rem;
+    display: inline-block;
+    width: auto;
+    height: 70px;
+}
+.lien2
+{
+    text-align: center;
+    background-color: #191e26;
+    color: white;
+    font-size: 2rem;
+    display: inline-block;
+    width: auto;
+    height: 70px;
+}
+.lien3
+{
+    background-color: #191e26;
+    color: white;
+    font-size: 2rem;
+    display: inline-block;
+    width: auto;
+    height: 70px;
+    z-index: 3;
+    margin-left: 0%;
+}
+.lien4
+{
+    background-color: #191e26;
+    color: white;
+    font-size: 2rem;
+    display: inline-block;
+    width: auto;
+    height: 70px;
+    z-index: 3;
+    margin-left: 0%;
+}
+
+body
+{
+    background-color:#191e26 ;
+    font-family: "Viking", serif;
+}
+h1
+{
+    font-family: "Viking", serif;
+    font-size: 5rem;
+    text-align: center;
+    color: #4b4b49;
+}

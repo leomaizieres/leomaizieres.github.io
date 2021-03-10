@@ -1,0 +1,172 @@
+@font-face
+{
+    font-family: "Viking";
+    src: url("../police/vikingn.ttf");
+}
+
+.lien
+{
+    text-align: center;
+    background-color: #191e26;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    width: 150px;
+    height: 70px;
+    top: 8%;
+    left: 20%;
+}
+.lien2
+{
+    text-align: center;
+    background-color: #191e26;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    width: 150px;
+    height: 70px;
+    left: 80%;
+    top: 8%;
+}
+.lien3
+{
+    background-color: #191e26;
+    color: white;
+    display: inline-block;
+    width: 150px;
+    height: 70px;
+    z-index: 3;
+    position: absolute;
+    margin-left: 0%;
+    top: 80%;
+    left: 45%;
+}
+
+body
+{
+    background-color:#191e26 ;
+    font-family: "Viking", serif;
+}
+
+
+h1
+{
+    font-family: "Viking", serif;
+    font-size: 5rem;
+    text-align: center;
+    color: #4b4b49;
+}
+#boite
+{
+    width: 900px;
+    height: 500px;
+    position: absolute;
+    overflow: hidden;
+    left: 26%;
+}
+@keyframes f1{
+    from{left: 120%;}
+    to{left: -100%;}
+}
+@keyframes oscille{
+    20%{transform: rotate(-15deg);}
+    50%{transform: rotate(0deg);}
+    90%{transform: rotate(10deg);}
+}
+#drakkar
+{
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    transform-origin: center;
+    top: 43px;
+    animation: f1 15s infinite linear, oscille 2s infinite linear;
+    z-index: 1;
+}
+
+
+@keyframes saute 
+{
+    0%{top: 150%; left: 100%;}
+    
+    50%{top: 50px;}
+
+    100%{top: 150%; left: -20%;}
+}
+@keyframes tourne
+{
+    0%{transform: rotate(40deg);}
+    40%{transform: rotate(50deg);}
+    50%{transform: rotate(-20deg);}
+    100%{}
+}
+#baleine
+{
+    position: absolute;
+    top: -300px;
+    width: 50%;
+    height: 50%;
+    z-index: 1;
+    transform-origin: center center;
+    animation: saute 6s linear infinite, tourne 6s linear infinite ;
+}
+
+
+#mer
+{
+    position: absolute;
+    top: 170px;
+    height: 106px;
+    width: 100%;
+    background-image: url(mer.png);
+    animation: droitegauche3 8s infinite linear;
+    z-index: 0;
+}
+#mer2
+{
+    position: absolute;
+    top: 210px;
+    height: 106px;
+    width: 100%;
+    background-image: url(mer.png);
+    animation: droitegauche3 8s infinite linear;
+    z-index: 3;
+}
+#couleurmer
+{
+    position: absolute;
+    top: 250px;
+    height: 400px;
+    width: 900px;
+    background-color: #1295c9;
+    z-index: 2;
+}
+#montagne
+{
+    top: 70px;
+    width: 100%;
+    height: 136px;
+    position: absolute;
+    background-image: url(montagnes.png);
+    animation: droitegauche 10s infinite linear;
+}
+@keyframes droitegauche{
+    from{background-position-x: 0px;}
+    to{background-position-x: 512px;}
+}
+@keyframes droitegauche2{
+    from{background-position-x: 0px;}
+    to{background-position-x: 700px;}
+}
+@keyframes droitegauche3{
+    from{background-position-x: 0px;}
+    to{background-position-x: 512px;}
+}
+#ciel
+{
+    width: 100%;
+    height: 210px;
+    background-color: lightblue;
+    background-image: url(nuage.png);
+    animation: droitegauche2 7s infinite linear;
+}
